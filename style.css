@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* 
+aos animation
+
+*/
+
+
+
+
+    .body-color {
+      background-color: #f5f5f5;
+      /* Electro-style light gray */
+    }
+/*    hero img section */
+.electro-hero {
+  height: 80vh; /* Adjust height as needed */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5); /* Dark overlay effect */
+  z-index: 1;
+}
+
+.electro-hero .container {
+  position: relative;
+  z-index: 2;
+  color: white; /* Ensure text is readable */
+  text-align: center;
+  padding: 20px;
+}
+
+.electro-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: wheat;
+}
+
+.electro-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: wheat;
+
+}
+
+.electro-hero .breadcrumb {
+  background: transparent;
+  justify-content: center;
+  padding: 0;
+
+
+}
+
+.electro-hero .breadcrumb .breadcrumb-item a {
+  color: white;
+}
+
+.electro-hero .breadcrumb .breadcrumb-item.active {
+  color: #ffc107; /* Electro-like highlight */
+}
+
+
+ 
+    .filters {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .filters button {
+      margin: 5px;
+      padding: 8px 16px;
+      background: #ffc107;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .filters button.active {
+      background: #ff9800;
+      color: white;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .btn-cart {
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  .footer-modern {
+  background: linear-gradient(135deg, #0d0f14, #1a1f27);
+  position: relative;
+  overflow: hidden;
+}
+
+/* .footer-wave {
+  width: 100%;
+  height: 70px;
+  background: url("https://i.ibb.co/3kYk1Tf/footer-wave-light.png");
+  background-size: cover;
+  margin-top: -40px;
+} */
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #ffc107;
+  padding-left: 4px;
+}
+
+.footer-social i,
+.social-icons a i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover i {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+.payment-icons .pay-icon {
+  height: 30px;
+  filter: brightness(0.9);
+  transition: .3s;
+}
+
+.payment-icons .pay-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.newsletter-box input {
+  background: #2a2e35;
+  border: none;
+  color: white;
+}
+
+.newsletter-box input::placeholder {
+  color: #bbbbbb;
+}
+
+.space-list li {
+  margin-bottom: 12px;
+}
+
+.footer-separator {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ====== CARD HOVER ANIMATION ====== */
+.product .card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.product .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Image Zoom Effect */
+.product .card img {
+  transition: transform 0.4s ease;
+}
+
+.product .card:hover img {
+  transform: scale(1.1);
+}
+
+/* Add to Cart Button Hover */
+.btn-cart {
+  transition: 0.3s ease;
+}
+
+.btn-cart:hover {
+  background: #ff5722;
+  transform: scale(1.1);
+}
+
+/* ====== FILTER BUTTON ANIMATION ====== */
+/* --- AIO FILTER ANIMATION --- */
+
+ .filters button {
+      margin: 5px;
+      padding: 8px 16px;
+      background: #ffc107;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .filters button.active {
+      background: #ff9800;
+      color: white;
+    }
+/* ====== HERO BANNER IMAGE HOVER ====== */
+.col-xl-4 img {
+  transition: 0.4s;
+}
+.col-xl-3 img {
+  transition: 0.4s;
+}
+
+.col-xl-4 img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+.col-xl-3 img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* ===== Carousel Text Fade ===== */
+.carousel-item h2, 
+.carousel-item p, 
+.carousel-item h3 {
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== FEATURE BOX HOVER ===== */
+.col-xl-2.bg-light {
+  transition: 0.3s ease;
+  border-radius: 12px;
+}
+
+.col-xl-2.bg-light:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255,193,7,0.4);
+}
+
+/* ====== BANNER CARD INTERACTION ====== */
+.card.bg-light {
+  transition: 0.3s;
+}
+
+.card.bg-light:hover {
+  background: #fff9e6;
+  transform: scale(1.02);
+}
+
+
+/*   single page code */
+ 
+    body {
+      background: #f7f7f7;
+      font-size: 18px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5') center/cover;
+      padding: 140px 0;
+      color: white;
+      text-shadow: 1px 1px 6px black;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    /* Product Image */
+    .product-img {
+      height: 420px;
+      object-fit: contain;
+    }
+
+    /* Animation */
+    .fade-up {
+      animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Icons Section */
+    .icon-box {
+      transition: .3s;
+      font-size: 20px;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Counter */
+    .counter-box {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00000010;
+    }
+
+    .counter-number {
+      font-size: 45px;
+      font-weight: 700;
+    }
+
+    /* Table */
+    .spec-table td {
+      padding: 14px;
+      font-size: 18px;
+      background: white;
+    }
+
+    /* Offer Banner */
+    .offer-banner {
+      background: linear-gradient(45deg, #ffc107, #ff8800);
+      color: white;
+      padding: 45px;
+      border-radius: 20px;
+      font-size: 20px;
+    }
+
+    .offer-banner h2 {
+      font-size: 2.5rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      color: #aaa;
+      padding: 50px 0;
+    }
+
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    p,
+    td {
+      font-size: 18px;
+    }
+  
+
+
+    /* contact page code */
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* TOP BAR */
+    .top-bar { font-size: 1.15rem; background: #f8f9fa; padding: 10px 0; }
+    .top-bar a { text-decoration: none; color: #212529; }
+    .top-bar a:hover { color: #ff512f; }
+
+    /* Navbar */
+    .navbar-warning { background-color: #ffc107 !important; }
+    .navbar a { font-weight: 500; }
+
+    /* Hero Section */
+    .hero-banner {
+      background-image: url('https://images.unsplash.com/photo-1602526211870-b7f46a3f7fd8?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-banner .container {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero-banner p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+    }
+
+    /* Info Cards */
+    .info-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    .info-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .info-card img { width: 60px; margin-bottom: 15px; }
+
+    /* Contact Form */
+    .contact-form {
+      padding: 80px 0;
+            background: url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5') center/cover;
+
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    .contact-form::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+    .contact-form .container { position: relative; z-index: 2; }
+    .contact-form input, .contact-form textarea {
+      border-radius: 10px; border: none; padding: 15px; margin-bottom: 15px;
+    }
+    .contact-form button {
+      border-radius: 50px; padding: 10px 30px; background: linear-gradient(90deg, #ff512f, #dd2476);
+      border: none; color: #fff; transition: transform 0.3s;
+    }
+    .contact-form button:hover { transform: scale(1.1); }
+
+    /* Map Section */
+    .map iframe {
+      width: 100%; height: 350px; border-radius: 15px; border: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Newsletter */
+    .newsletter {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .newsletter input {
+      border-radius: 50px; padding: 12px 20px; border: none; width: 300px; max-width: 80%; margin-right: 10px;
+    }
+    .newsletter button {
+      border-radius: 50px; border: none; padding: 12px 25px; background-color: #fff; color: #ff512f; font-weight: bold;
+      transition: 0.3s;
+    }
+    .newsletter button:hover { background-color: #ffddf0; }
+
+    /* Footer */
+    footer {
+      background-color: #212529; color: #fff; padding: 30px 0; text-align: center;
+    }
+
+
+
+
+
+    /* cart code */
+    
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            font-size: 1.15rem;
+            background: #f8f9fa;
+            padding: 10px 0;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: #212529;
+        }
+
+        .top-bar a:hover {
+            color: #ff512f;
+        }
+
+        /* Navbar */
+        .navbar-warning {
+            background-color: #ffc107 !important;
+        }
+
+        /* Hero Section */
+        .hero-banner {
+            background-image: url('https://images.unsplash.com/photo-1602526211870-b7f46a3f7fd8?auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-banner .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-banner h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-banner p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Cart Table */
+        /* .cart-table img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        } */
+
+        .cart-table input {
+            width: 60px;
+            text-align: center;
+        }
+
+        .cart-table th,
+        .cart-table td {
+            vertical-align: middle;
+        }
+
+        /* Recommended Products */
+        .product-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Checkout */
+        .checkout-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .newsletter input {
+            border-radius: 50px;
+            padding: 12px 20px;
+            border: none;
+            width: 300px;
+            max-width: 80%;
+            margin-right: 10px;
+        }
+
+        .newsletter button {
+            border-radius: 50px;
+            border: none;
+            padding: 12px 25px;
+            background-color: #fff;
+            color: #ff512f;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .newsletter button:hover {
+            background-color: #ffddf0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+    

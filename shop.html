@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap icon cdn -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ⭐ TOP HEADER SECTION (Visible only on large screens) -->
+  <section class="container-fluid bg-light mt-2 p-2 d-none d-lg-block" data-aos="fade-right">
+    <div class="row align-items-center">
+      <div class="col-4 fw-bold d-flex">
+        <a href="help.html" class="mx-2 text-dark fs-5 text-decoration-none">Help</a> /
+        <a href="support.html" class="mx-2 text-dark fs-5 text-decoration-none">Support</a> /
+        <a href="contact.html" class="mx-2 text-dark fs-5 text-decoration-none">Contact</a>
+      </div>
+
+      <div class="col-4 fs-5 fw-bold text-center">
+        <a href="#" class="text-decoration-none text-dark">
+          Call Us: (+012) 1234 567890
+        </a>
+      </div>
+
+      <div class="col-4 d-flex justify-content-around fw-bold">
+
+        <!-- Currency -->
+        <div class="dropdown">
+          <a class="dropdown-toggle text-dark fs-5 text-decoration-none" data-bs-toggle="dropdown">USD</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">USD</a></li>
+            <li><a class="dropdown-item">INR</a></li>
+            <li><a class="dropdown-item">EUR</a></li>
+          </ul>
+        </div>
+
+        <!-- Language -->
+        <div class="dropdown">
+          <a class="dropdown-toggle text-dark fs-5 text-decoration-none" data-bs-toggle="dropdown">
+            English
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">English</a></li>
+            <li><a class="dropdown-item">Hindi</a></li>
+            <li><a class="dropdown-item">Marathi</a></li>
+          </ul>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dropdown">
+          <a class="dropdown-toggle text-dark fs-5 text-decoration-none" data-bs-toggle="dropdown">
+            <i class="bi bi-person-circle me-1"></i> My Dashboard
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"><i class="bi bi-speedometer2 me-2"></i>Overview</a></li>
+            <li><a class="dropdown-item"><i class="bi bi-gear me-2"></i>Settings</a></li>
+            <li><a class="dropdown-item"><i class="bi bi-box-arrow-in-right me-2"></i>Logout</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- ⭐ LOGO + SEARCH BAR (Also hidden on mobile/tablet) -->
+    <div class="container my-3 d-none d-lg-block">
+      <div class="row align-items-center">
+
+        <div class="col-md-3 text-center text-md-start">
+          <img src="img/ChatGPT Image Nov 14, 2025, 07_02_48 PM.png" class="img-fluid rounded-circle w-50" alt="Logo">
+        </div>
+
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="What are you looking for?">
+            <select class="form-select">
+              <option>All categories</option>
+              <option>Category 1</option>
+              <option>Category 2</option>
+              <option>Category 3</option>
+            </select>
+            <button class="btn btn-warning"><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-3 text-end">
+          <button class="btn btn-light me-2">
+            <i class="bi bi-heart text-danger fs-4"></i>
+          </button>
+
+          <button class="btn btn-light me-2 position-relative">
+            <i class="bi bi-cart text-success fs-4"></i>
+            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">
+              3
+            </span>
+          </button>
+
+          <button class="btn btn-light">
+            <i class="bi bi-currency-dollar text-warning fs-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end of search navbar -->
+  <!-- ⭐ MAIN NAVBAR (Always visible) -->
+    <div class="contaner-fluid bg-warning" data-aos="fade-up">
+
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg  fs-5">
+          <div class="container">
+
+            <a class="navbar-brand"><i class="bi bi-list"></i> All Categories</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-around" id="navMenu">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="singlePage.html">Single Page</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="cart .html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contact .html">Contact</a></li>
+
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- ⭐  end of MAIN NAVBAR  -->
+  <!-- Hero Section -->
+  
+  <section class="position-relative d-flex align-items-center electro-hero" data-aos="fade-right">
+
+    <!-- Background Image -->
+    <div class="hero-bg-img">   </div>
+
+    <!-- Content -->
+    <div class="container position-relative text-dark fw-bold py-5 text-center">
+      <h1 class="fw-bold display-5">Mobile Shop</h1>
+      <p class="fs-5 mb-4">Latest Smartphones • Best Offers • 100% Genuine Products</p>
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-light text-decoration-none fs-4">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="pages.html" class="text-light text-decoration-none fs-4">Page </a>
+          </li>
+
+          <li class="breadcrumb-item active fs-4" aria-current="page">
+            Shop
+          </li>
+        </ol>
+      </nav>
+
+    </div>
+
+  </section>
+  <div class="container-fluid bg-light" data-aos="fade-right">
+    <div class="container-fluid my-5 shadow">
+      <div class="row text-center g-4">
+
+        <!-- Free Return -->
+        <div class="col-6  col-md-4 col-xl-2 bg-light p-4 border  border-light shadow cardcard">
+          <i class="fas fa-undo-alt fa-2x text-warning mb-2 "></i>
+          <h3 class="fs-6 fw-bold">Free Return</h3>
+          <p class="text-muted small mb-0">Hassle-free 30-day return policy</p>
+        </div>
+
+        <!-- Free Shipping -->
+        <div class="col-6 col-md-4 col-xl-2 bg-light p-4 border  border-light shadow  card">
+          <i class="fas fa-truck fa-2x text-warning mb-2"></i>
+          <h3 class="fs-6 fw-bold">Free Shipping</h3>
+          <p class="text-muted small mb-0">On all orders over $50</p>
+        </div>
+
+        <!-- Support 24/7 -->
+        <div class="col-6 col-md-4 col-xl-2 bg-light p-4 border  border-light shadow card">
+          <i class="fas fa-headset fa-2x text-warning mb-2"></i>
+          <h3 class="fs-6 fw-bold">Support 24/7</h3>
+          <p class="text-muted small mb-0">We’re here to help anytime</p>
+        </div>
+
+        <!-- Receive Gift Card -->
+        <div class="col-6 col-md-4 col-xl-2 bg-light p-4 border  border-light shadow card">
+          <i class="fas fa-gift fa-2x text-warning mb-2"></i>
+          <h3 class="fs-6 fw-bold">Receive Gift Card</h3>
+          <p class="text-muted small mb-0">Rewards with every purchase</p>
+        </div>
+
+        <!-- Secure Payment -->
+        <div class="col-6 col-md-4 col-xl-2 bg-light p-4 border  border-light shadow card">
+          <i class="fas fa-lock fa-2x text-warning mb-2"></i>
+          <h3 class="fs-6 fw-bold">Secure Payment</h3>
+          <p class="text-muted small mb-0">100% safe online payments</p>
+        </div>
+
+        <!-- Online Service -->
+        <div class="col-6 col-md-4 col-xl-2 bg-light p-4 border  border-light shadow card">
+          <i class="fas fa-laptop fa-2x text-warning mb-2"></i>
+          <h3 class="fs-6 fw-bold">Online Service</h3>
+          <p class="text-muted small mb-0">Access our services anywhere</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="container  " data-aos="flip-up">
+    <div class="row mb-5 g-4">
+      <div class="col-12 col-xl-6 ">
+        <div class="card  shadow bg-light p-5 ">
+          <div class="row align-items-center  mb-5 mx-4">
+            <!-- Text Column -->
+            <div class="col-8">
+              <h3 class="fw-bold">Find The Best Camera for You!</h3>
+              <h4 class="text-primary fw-bold">Smart Camera</h4>
+              <p class="text-muted mb-2">Capture your moments with the latest Smart Camera at unbeatable price.</p>
+              <p class="fw-bold text-danger">40% Off</p>
+              <button class="btn btn-warning rounded-pill px-4 py-2">
+                <i class="bi bi-cart"></i> Add to Cart
+              </button>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-4 text-center">
+              <img src="https://themewagon.github.io/Electro-Bootstrap/img/product-1.png" alt="Smart Camera"
+                class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-6">
+        <div class="card shadow bg-light p-5">
+          <div class="row align-items-center mb-5 mx-4">
+            <!-- Text Column -->
+
+            <div class="col-8">
+              <h3 class="fw-bold">Find The Best Watches for You!</h3>
+              <h4 class="text-primary fw-bold">Smart Watch</h4>
+              <p class="text-muted mb-2">Stay stylish and track your health with the latest Smart Watch.</p>
+              <p class="fw-bold text-danger">20% Off</p>
+              <button class="btn btn-warning rounded-pill px-4 py-2">
+                <i class="bi bi-cart"></i> Add to Cart
+              </button>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-4 text-center">
+              <img src="https://themewagon.github.io/Electro-Bootstrap/img/product-2.png" alt="Smart Watch"
+                class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-light shadow p-4" data-aos="flip-up">
+    <div class="row">
+      <div class="col-12 col-xl-4">
+        <h1>Products Categories</h1>
+
+        <ul class="fs-4 list-unstyled mt-4">
+          <li class="mb-2">
+            <i class="fa-solid fa-angle-right me-2 text-secondary"></i>
+            Accessories (3)
+          </li>
+
+          <li class="mb-2">
+            <i class="fa-solid fa-angle-right me-2 text-secondary"></i>
+            Electronics & Computer (5)
+          </li>
+
+          <li class="mb-2">
+            <i class="fa-solid fa-angle-right me-2 text-secondary"></i>
+            Laptops & Desktops (2)
+          </li>
+
+          <li class="mb-2">
+            <i class="fa-solid fa-angle-right me-2 text-secondary"></i>
+            SmartPhone & Smart TV (5)
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-xl-8">
+        <div class=" position-relative">
+          <img src="https://themewagon.github.io/Electro-Bootstrap/img/product-banner-3.jpg" alt=""
+            class="img-fluid w-100 ">
+          <div class="fs-1  fs-sm-4 fw-bold position-absolute top-50 start-50 translate-middle text-center text-light">
+            <p>
+              SALE</p>
+            <p>
+              Get UP To 50% Off
+            </p>
+            <button class="btn btn-warning btn-sm-sm">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid mt-5" data-aos="flip-right">
+    <div class="container mt-2">
+      <!-- Example: Put this somewhere in the product card or above/below the product list -->
+      <div class="row  justify-content-around g-4 align-items-center p-3 shadow-sm rounded-3 bg-white">
+
+        <!-- Price + Progress -->
+        <div class="col-12 col-xl-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="fw-bold fs-4">Price Progress</span>
+            <span class="fw-bold text-warning">65%</span>
+          </div>
+
+          <div class="progress rounded-pill" style="height: 18px;">
+            <div class="progress-bar bg-warning rounded-pill" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+              aria-valuemax="100" style="width: 65%;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Box -->
+        <div class="col-12 col-xl-4">
+          <div class="input-group shadow-sm rounded-pill overflow-hidden border ">
+
+            <!-- Icon -->
+            <span class="input-group-text bg-warning border-0">
+              <i class="bi bi-search text-white fs-5"></i>
+            </span>
+
+            <!-- Input -->
+            <input type="text" placeholder="Search Keyword..." class="form-control border-0 shadow-none">
+
+          </div>
+        </div>
+
+
+        <!-- Sort By -->
+        <div class="col-12 col-xl-4 text-xl-end ">
+          <select class="form-select form-select-bg w-100 w-xl-auto shadow-sm rounded-pill p-3">
+            <option selected disabled>Sort By:</option>
+            <option value="1">Popularity</option>
+            <option value="2">Latest</option>
+            <option value="3">Price: Low to High</option>
+            <option value="4">Price: High to Low</option>
+          </select>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-5 shadow p-2" data-aos="flip-left">
+    <div class="row justify-content-md-center  my-3">
+      <div class="col-12 col-md-6 col-xl-3  text-center d-flex flex-column align-items-center ">
+
+        <h1>Select By Color</h1>
+
+        <div class="mt-4 d-flex flex-column gap-3">
+
+          <!-- Orange -->
+          <div class="d-flex align-items-center gap-3 text-center">
+            <div class="rounded-circle border" style="width: 30px; height: 30px; background-color: #ff9800;"></div>
+            <span class="fs-5 text-secondary">Orange</span>
+          </div>
+
+          <!-- Black -->
+          <div class="d-flex align-items-center gap-3">
+            <div class="rounded-circle border" style="width: 30px; height: 30px; background-color: #000000;"></div>
+            <span class="fs-5 text-secondary">Black</span>
+          </div>
+
+          <!-- Blue -->
+          <div class="d-flex align-items-center gap-3">
+            <div class="rounded-circle border" style="width: 30px; height: 30px; background-color: #2196f3;"></div>
+            <span class="fs-5 text-secondary">Blue</span>
+          </div>
+
+          <!-- Green -->
+          <div class="d-flex align-items-center gap-3">
+            <div class="rounded-circle border" style="width: 30px; height: 30px; background-color: #4caf50;"></div>
+            <span class="fs-5 text-secondary">Green</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-12  col-md-6 col-xl-3">
+        <div class="card h-100 p-3 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1684127987312-43455fd95925?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhcHRvcCUyMEdhbWluZyUyMExhcHRvcCUyMFgxfGVufDB8fDB8fHww"
+            alt="Gaming Laptop X1">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Laptop X1</h5>
+            <p class="card-text">High-performance laptop for gaming and multitasking.</p>
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12  col-md-6 col-xl-3">
+        <div class="card h-100 p-3 text-center">
+          <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?fit=crop&w=600&q=80"
+            alt="Ultrabook Z5">
+          <div class="card-body">
+            <h5 class="card-title">Ultrabook Z5</h5>
+            <p class="card-text">Slim, lightweight and ideal for work on-the-go.</p>
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container mt-5" data-aos="fade-right">
+    <div class="row flex-wrap my-3">
+      <!-- Featured Products -->
+      <div class="col-12  mt-5">
+        <h1 class="mb-4">Featured Products</h1>
+      </div>
+
+      <!-- Product 1 – Laptop -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card shadow-sm border-0 h-100 shadow bg-light">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="card-img-top" alt="Laptop">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Gaming Laptop</h5>
+            <p class="card-text text-secondary">High performance laptop for work & gaming.</p>
+            <span class="fw-bold fs-5 text-primary">$999</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 – Smartphone -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card shadow-sm border-0 h-100 shadow bg-light">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top" alt="Smartphone">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Smartphone</h5>
+            <p class="card-text text-secondary">Fast processor & stunning display.</p>
+            <span class="fw-bold fs-5 text-primary">$699</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 – Headphones -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card shadow-sm border-0 h-100 shadow bg-light">
+          <img
+            src="https://www.portronics.com/cdn/shop/files/Portronics_Muff_M3_best_headphones_under_5000.jpg?v=1744893854"
+            class="card-img-top" alt="Headphones">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Wireless Headphones</h5>
+            <p class="card-text text-secondary">Crystal clear sound & noise cancellation.</p>
+            <span class="fw-bold fs-5 text-primary">$199</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 – Smartwatch -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="card shadow-sm border-0 h-100 shadow bg-light">
+          <img
+            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+            class="card-img-top" alt="Smartwatch">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Smart Watch</h5>
+            <p class="card-text text-secondary">Track activity & stay connected.</p>
+            <span class="fw-bold fs-5 text-primary">$249</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="footer-modern pt-5 pb-4"data-aos="flip-left">
+  <div class="footer-wave"> </div>
+
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- Left Column -->
+      <div class="col-12 col-md-4">
+        <h3 class="fw-bold text-white mb-3">Electro</h3>
+        <p class="text-light opacity-75 mb-4">
+          Your one-stop electronics store. Quality gadgets, best prices, super-fast shipping.
+        </p>
+
+        <ul class="list-unstyled text-light mb-4 space-list">
+          <li><i class="bi bi-geo-alt-fill me-2 text-warning"></i><strong>Address:</strong> 123 Street, New York, USA</li>
+          <li><i class="bi bi-envelope-fill me-2 text-warning"></i><strong>Mail Us:</strong> info@example.com</li>
+          <li><i class="bi bi-telephone-fill me-2 text-warning"></i><strong>Phone:</strong> (+012) 3456 7890</li>
+        </ul>
+
+        <h6 class="fw-semibold text-white mb-2">Newsletter</h6>
+        <p class="text-light small opacity-75 mb-3">Subscribe to get latest offers & updates.</p>
+
+        <form class="newsletter-box d-flex" onsubmit="event.preventDefault();">
+          <input class="form-control rounded-start-pill" type="email" placeholder="Your email">
+          <button class="btn btn-warning text-dark fw-semibold rounded-end-pill ms-2">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold text-white mb-4 footer-subtitle">Customer Service</h6>
+        <ul class="footer-links space-list">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">My Account</a></li>
+        </ul>
+      </div>
+
+      <!-- Information -->
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold text-white mb-4 footer-subtitle">Information</h6>
+        <ul class="footer-links space-list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+
+      <!-- Extras -->
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold text-white mb-4 footer-subtitle">Extras</h6>
+        <ul class="footer-links space-list">
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Gift Vouchers</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+      </div>
+
+      <!-- Payment + Social -->
+      <div class="col-12 col-md-2">
+        <h6 class="fw-bold text-white mb-4 footer-subtitle">Payment</h6>
+        <div class="d-flex gap-2 mb-4 payment-icons flex-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" class="pay-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" class="pay-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Pay_Logo.svg" class="pay-icon">
+        </div>
+
+        <h6 class="fw-bold text-white mb-2">Follow Us</h6>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-separator my-4">
+
+    <div class="text-center small text-light opacity-75">
+      © 2025 Electro. All rights reserved.
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,     // smooth speed
+    offset: 100,       // when animation starts
+    once: true         // animate only once
+  });
+</script>
+</body>
+
+</html>
