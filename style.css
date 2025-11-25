@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+   box-sizing: border-box;
 }
 
 
@@ -10,7 +11,9 @@
 aos animation
 
 */
-
+body, html { 
+  overflow-x: hidden;
+}
 
 
 
@@ -659,3 +662,41 @@ aos animation
             text-align: center;
         }
     
+
+
+        /* 
+        
+        for responsive  cards
+        */
+        /* Responsive fix for product cards (image + text) */
+@media (max-width: 767.98px) {
+
+  /* Make row vertical on mobile */
+  .card .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  /* Text column full width */
+  .card .col-8 {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Image column full width */
+  .card .col-4 {
+    width: 100% !important;
+  }
+
+  /* Image styling */
+  .card img {
+    max-width: 170px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Card padding smaller on mobile */
+  .card.p-5 {
+    padding: 20px !important;
+  }
+}
